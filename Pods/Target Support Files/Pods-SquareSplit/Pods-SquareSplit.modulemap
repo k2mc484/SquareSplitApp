@@ -1,0 +1,6 @@
+framework module Pods_SquareSplit {
+  umbrella header "Pods-SquareSplit-umbrella.h"
+
+  export *
+  module * { export * }
+}

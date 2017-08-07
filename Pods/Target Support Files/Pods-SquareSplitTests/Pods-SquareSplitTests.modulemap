@@ -1,0 +1,6 @@
+framework module Pods_SquareSplitTests {
+  umbrella header "Pods-SquareSplitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
