@@ -147,22 +147,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="********" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-Id-Lgv">
-                                <rect key="frame" x="69.666666666666686" y="187" width="260" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="TOS-2M-Vz8"/>
-                                    <constraint firstAttribute="width" constant="260" id="Z7C-iM-J7G"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-Id-Lgv">
+                                <rect key="frame" x="50" y="275" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="square@split.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-uD-W9S">
-                                <rect key="frame" x="70.666666666666686" y="102" width="260" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="gnA-ew-7dY"/>
-                                    <constraint firstAttribute="height" constant="30" id="tpT-Ck-bjS"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-uD-W9S">
+                                <rect key="frame" x="51" y="190" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -581,8 +575,7 @@
                             <constraint firstItem="2dy-gm-eU6" firstAttribute="top" secondItem="HLd-zQ-hyc" secondAttribute="top" constant="63" id="TyA-RG-E5c"/>
                             <constraint firstItem="cCa-PH-6vv" firstAttribute="leading" secondItem="HLd-zQ-hyc" secondAttribute="leading" id="VlW-hN-lGe"/>
                             <constraint firstItem="2dy-gm-eU6" firstAttribute="leading" secondItem="HLd-zQ-hyc" secondAttribute="leading" id="Ztk-GL-pIv"/>
-                            <constraint firstItem="cCa-PH-6vv" firstAttribute="top" secondItem="Wk2-v9-b7v" secondAttribute="bottom" constant="10" id="iCR-Nd-uuz"/>
-                            <constraint firstItem="cCa-PH-6vv" firstAttribute="top" secondItem="Zxa-vA-92R" secondAttribute="bottom" id="kgg-6X-ZmL"/>
+                            <constraint firstItem="FXO-Jx-RHE" firstAttribute="top" secondItem="TQj-WD-QBn" secondAttribute="top" id="cvA-FO-Saz"/>
                             <constraint firstItem="2dy-gm-eU6" firstAttribute="top" secondItem="cCa-PH-6vv" secondAttribute="top" id="mBS-xY-Xvm"/>
                             <constraint firstItem="2dy-gm-eU6" firstAttribute="leading" secondItem="TQj-WD-QBn" secondAttribute="trailing" id="mRm-mn-eD4" userLabel="Side BarTrailing"/>
                             <constraint firstItem="TQj-WD-QBn" firstAttribute="bottom" secondItem="2dy-gm-eU6" secondAttribute="bottom" id="ugY-Up-WQl"/>
@@ -615,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGd-Gh-Xsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.04347826086962" y="1177.9891304347827"/>
+            <point key="canvasLocation" x="132" y="1029.5352323838081"/>
         </scene>
         <!--Add Users-->
         <scene sceneID="jf3-kM-DSN">
@@ -832,7 +825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyY-69-Fbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="1959"/>
+            <point key="canvasLocation" x="-631" y="1058"/>
         </scene>
         <!--Side Bar View Controller-->
         <scene sceneID="PuS-ZK-Qec">
@@ -936,6 +929,6 @@
         <image name="squaresplit-logo-text-bw_720" width="719" height="155"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ELi-fX-cVX"/>
+        <segue reference="poI-6U-pIb"/>
     </inferredMetricsTieBreakers>
 </document>
