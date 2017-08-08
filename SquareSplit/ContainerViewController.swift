@@ -7,15 +7,26 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseCore
+import GoogleSignIn
+import FirebaseDatabase
 
 class ContainerViewController: UIViewController {
     
+    var ref: DatabaseReference!
+    var refHandle: UInt!
+    
+    @IBOutlet weak var firstSidebarLabel: UILabel!
+    @IBOutlet weak var lastSidebarLabel: UILabel!
+    @IBOutlet weak var usernameSidebarLabel: UILabel!
+
+    
     var menuShowing = false
     
-    @IBOutlet weak var sideBarLeading: NSLayoutConstraint!
     @IBOutlet weak var sideBarTrailing: NSLayoutConstraint!
-    
+    @IBOutlet weak var sideBarLeading: NSLayoutConstraint!
+   
     @IBOutlet weak var groupsLeading: NSLayoutConstraint!
     @IBOutlet weak var groupsTrailing: NSLayoutConstraint!
     
@@ -27,17 +38,39 @@ class ContainerViewController: UIViewController {
    
     @IBOutlet weak var containerViewHome: UIView!
     @IBOutlet weak var containerViewGroups: UIView!
-    @IBOutlet weak var containerViewSidebar: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Update username, first, and last on sidebar
+        ref = Database.database().reference()
+        refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
+            let detaDict = snapshot.value as! [String:AnyObject]
+            print(detaDict)
+        })
+        let userID: String = (Auth.auth().currentUser?.uid)!
+        
+        
+        //Display user info
+        ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            let username = value?["Username"] as? String ?? ""
+            let first = value?["First"] as? String ?? ""
+            let last = value?["Last"] as? String ?? ""
+            
+            
+            self.usernameSidebarLabel.text = username
+            self.firstSidebarLabel.text = first
+            self.lastSidebarLabel.text = last
+            
+        })
     }
         //Function used to toggle the sidebar using constraint manipulation
         @IBAction func goToSidebar(_ sender: Any) {
        
             if(menuShowing){
                 sideBarLeading.constant = -240
-                sideBarTrailing.constant = 375
+                sideBarTrailing.constant = 240
                 
                 groupsLeading.constant = 0
                 groupsTrailing.constant = 0
@@ -51,7 +84,8 @@ class ContainerViewController: UIViewController {
             }
             else{
                 sideBarLeading.constant = 0
-                sideBarTrailing.constant = 135
+                sideBarTrailing.constant = 0
+                
                 
                 groupsLeading.constant = 240
                 groupsTrailing.constant = -240
@@ -87,9 +121,26 @@ class ContainerViewController: UIViewController {
             })
         }
     }
-
+  
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        
+        //Logout the user
+        if Auth.auth().currentUser != nil{
+            let firebaseAuth = Auth.auth()
+            do{
+                try firebaseAuth.signOut();
+            }
+            catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+        }
+        //Segue back to the Login screen
+        self.performSegue(withIdentifier: "goToLogin", sender: self);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
