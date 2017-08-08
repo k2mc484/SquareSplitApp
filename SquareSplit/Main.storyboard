@@ -455,7 +455,7 @@
                                             <segment title="" image="Home"/>
                                             <segment title="" image="Group"/>
                                         </segments>
-                                        <color key="tintColor" red="0.97314681309882478" green="1" blue="0.99033778516541326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <connections>
                                             <action selector="showComponentWithSender:" destination="XXV-ox-2xg" eventType="valueChanged" id="Srb-hV-JhD"/>
                                         </connections>
@@ -617,7 +617,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUG-aq-nEr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qUG-aq-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
