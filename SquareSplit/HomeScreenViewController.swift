@@ -48,11 +48,10 @@ class HomeScreenViewController: UIViewController {
             ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 let value = snapshot.value as? NSDictionary
-                let username = value?["Username"] as? String ?? ""
+                let firstName = value?["First"] as? String ?? ""
+                let lastName  = value?["Last"] as? String ?? ""
                 
-
-
-                self.UsernameLabel.text = username
+                self.UsernameLabel.text = firstName + " " + lastName
             })
     }
 
