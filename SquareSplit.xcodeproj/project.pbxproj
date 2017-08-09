@@ -14,7 +14,6 @@
 		8B00E0591F191EA9002DBD9D /* SquareSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00E0581F191EA9002DBD9D /* SquareSplitTests.swift */; };
 		8B00E0641F191EA9002DBD9D /* SquareSplitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00E0631F191EA9002DBD9D /* SquareSplitUITests.swift */; };
 		8B2985E11F2FAB0B000B2D96 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2985E01F2FAB0B000B2D96 /* ContainerViewController.swift */; };
-		8B2985E31F325577000B2D96 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2985E21F325577000B2D96 /* SideBarViewController.swift */; };
 		8B2985E71F391512000B2D96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B2985E61F391512000B2D96 /* GoogleService-Info.plist */; };
 		8B508FCF1F1A81E100DA3157 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B508FCE1F1A81E100DA3157 /* AdSupport.framework */; };
 		8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */; };
@@ -62,7 +61,6 @@
 		8B00E0631F191EA9002DBD9D /* SquareSplitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSplitUITests.swift; sourceTree = "<group>"; };
 		8B00E0651F191EA9002DBD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2985E01F2FAB0B000B2D96 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		8B2985E21F325577000B2D96 /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		8B2985E61F391512000B2D96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8B508FCE1F1A81E100DA3157 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				8B00E0431F191EA8002DBD9D /* AppDelegate.swift */,
 				8B00E04C1F191EA9002DBD9D /* LaunchScreen.storyboard */,
 				8B508FEE1F1D704C00DA3157 /* Main.storyboard */,
-				8B2985E21F325577000B2D96 /* SideBarViewController.swift */,
 				8B2985E01F2FAB0B000B2D96 /* ContainerViewController.swift */,
 				8B508FE91F1D6F9E00DA3157 /* ViewController.swift */,
 				8B508FE31F1D6DBF00DA3157 /* PasswordResetViewController.swift */,
@@ -481,7 +478,6 @@
 				8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */,
 				8B508FEA1F1D6F9E00DA3157 /* ViewController.swift in Sources */,
 				8B5244B61F2933D100CF8DFE /* GroupViewController.swift in Sources */,
-				8B2985E31F325577000B2D96 /* SideBarViewController.swift in Sources */,
 				8B508FE41F1D6DBF00DA3157 /* PasswordResetViewController.swift in Sources */,
 				8B508FFB1F1FBCAC00DA3157 /* HomeScreenViewController.swift in Sources */,
 			);
