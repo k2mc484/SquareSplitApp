@@ -21,7 +21,6 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var lastSidebarLabel: UILabel!
     @IBOutlet weak var usernameSidebarLabel: UILabel!
 
-    
     var menuShowing = false
     
     @IBOutlet weak var sideBarTrailing: NSLayoutConstraint!
@@ -40,7 +39,9 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var containerViewGroups: UIView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         //Update username, first, and last on sidebar
         ref = Database.database().reference()
         refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
@@ -65,6 +66,27 @@ class ContainerViewController: UIViewController {
             
         })
     }
+    
+    //Segue to building a group
+    @IBAction func goToGroupBuilder(_ sender: Any){
+        self.performSegue(withIdentifier: "goToGroupBuilder", sender: self)
+    }
+    
+    //Segment controller for switching views
+    @IBAction func showComponent(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.containerViewHome.alpha = 1
+                self.containerViewGroups.alpha = 0
+            })
+        } else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.containerViewHome.alpha = 0
+                self.containerViewGroups.alpha = 1
+            })
+        }
+    }
+
         //Function used to toggle the sidebar using constraint manipulation
         @IBAction func goToSidebar(_ sender: Any) {
        
@@ -95,33 +117,87 @@ class ContainerViewController: UIViewController {
                 
                 navigationLeading.constant = 240
                 navigationTrailing.constant = -240
-            }
+                }
             UIView.animate(withDuration: 0.3, animations: {
-                self.view.layoutIfNeeded()
+            self.view.layoutIfNeeded()
             })
             menuShowing = !menuShowing
     }
     
-    //Segue to building a group
-    @IBAction func goToGroupBuilder(_ sender: Any){
-        self.performSegue(withIdentifier: "goToGroupBuilder", sender: self)
+    
+    @IBAction func sidebarHome(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
+        
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+        
+        self.containerViewHome.alpha = 1
+        self.containerViewGroups.alpha = 0
     }
     
-    //Segment controller for switching views
-    @IBAction func showComponent(sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            UIView.animate(withDuration: 0.5, animations: {
-                self.containerViewHome.alpha = 1
-                self.containerViewGroups.alpha = 0
-            })
-        } else {
-            UIView.animate(withDuration: 0.5, animations: {
-                self.containerViewHome.alpha = 0
-                self.containerViewGroups.alpha = 1
-            })
-        }
+    @IBAction func sidebarGroups(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
+        
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+        
+        self.containerViewHome.alpha = 0
+        self.containerViewGroups.alpha = 1
+        
     }
-  
+    @IBAction func sidebarNewGroup(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
+        
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
+        self.performSegue(withIdentifier: "goToGroupBuilder", sender: self);
+
+    }
+    
+    @IBAction func sidebarInviteFriends(_ sender: Any) {
+        
+    }
+    @IBAction func sidebarHelp(_ sender: Any) {
+        
+    }
+    @IBAction func sidebarSettings(_ sender: Any) {
+        
+    }
+    
+    
     @IBAction func logoutButtonTapped(_ sender: Any) {
         
         //Logout the user
