@@ -637,7 +637,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="2669"/>
+            <point key="canvasLocation" x="1001" y="2758"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uXM-Cx-8Nd">
@@ -671,7 +671,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x53-4c-kmq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUG-aq-nEr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qUG-aq-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -704,23 +704,45 @@
                                 </connections>
                             </containerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vb1-Mo-T2H">
-                                <rect key="frame" x="0.0" y="159" width="375" height="30"/>
+                                <rect key="frame" x="139" y="72" width="236" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtB-23-CbV">
+                                <rect key="frame" x="49" y="77" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="With:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5v-53-Cbl">
+                                <rect key="frame" x="49" y="129" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create New Group" id="boH-IU-gvN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Oib-rA-oyt"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Oib-rA-oyt">
+                            <connections>
+                                <action selector="cancel:" destination="Q1a-mm-CRL" id="Zrx-dp-gVa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="BMh-Rw-QSl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="groupNameField" destination="Vb1-Mo-T2H" id="kip-2T-dBc"/>
+                        <segue destination="AKz-93-WD1" kind="show" action="showDetailViewController:sender:" id="Tyc-vC-Lbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJk-QT-KOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="2670"/>
+            <point key="canvasLocation" x="136.80000000000001" y="2669.4152923538231"/>
         </scene>
         <!--Group-->
         <scene sceneID="MZZ-2A-sCV">
@@ -770,7 +792,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="1904"/>
+            <point key="canvasLocation" x="137" y="3484"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BN5-tR-ejq">

@@ -151,12 +151,7 @@ class SearchFriends: UITableViewController, UISearchResultsUpdating {
      */
     
     
-        @IBAction func cancel(_ sender: Any) {
-                
-                dismiss(animated: true, completion: nil)
-    
-
-    }
+       
     func updateSearchResults(for searchController: UISearchController) {
         //update search results
         
