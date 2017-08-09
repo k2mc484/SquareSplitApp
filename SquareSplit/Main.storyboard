@@ -593,9 +593,9 @@
         <!--Search Friends-->
         <scene sceneID="jf3-kM-DSN">
             <objects>
-                <tableViewController id="kDR-NV-kCk" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kDR-NV-kCk" customClass="SearchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="e5K-qR-5su">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -637,57 +637,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="1906"/>
-        </scene>
-        <!--Create New Square-->
-        <scene sceneID="y5w-zM-3cT">
-            <objects>
-                <viewController id="Cug-Em-3XH" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cr2-af-kGy"/>
-                        <viewControllerLayoutGuide type="bottom" id="eGH-Kg-fnW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZAA-On-lcM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-3Q-ZYZ">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="kDR-NV-kCk" kind="embed" id="5K0-HU-t4D"/>
-                                </connections>
-                            </containerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ntn-hM-7or">
-                                <rect key="frame" x="0.0" y="72" width="375" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Create New Square" id="ssK-Ge-61e">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="YdT-e2-lV6">
-                            <connections>
-                                <action selector="cancel:" destination="Cug-Em-3XH" id="QJR-ma-wZx"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="XqH-Wj-DCg">
-                            <connections>
-                                <action selector="createGroup:" destination="Cug-Em-3XH" id="bCY-uf-vJn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="groupNameField" destination="Ntn-hM-7or" id="E1o-4e-yLh"/>
-                        <segue destination="AKz-93-WD1" kind="show" identifier="toGroup" id="Pic-St-jiV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GPA-g7-M2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1000.8" y="1784.257871064468"/>
+            <point key="canvasLocation" x="1001" y="2669"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uXM-Cx-8Nd">
@@ -721,20 +671,56 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x53-4c-kmq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qUG-aq-nEr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUG-aq-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Cug-Em-3XH" kind="show" id="JxH-FF-RKg"/>
+                        <segue destination="Q1a-mm-CRL" kind="relationship" relationship="rootViewController" id="zBn-uE-wHm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-PZ-vjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="1904"/>
+        </scene>
+        <!--Create New Group-->
+        <scene sceneID="3Zr-nw-Eir">
+            <objects>
+                <viewController id="Q1a-mm-CRL" customClass="BuildGroupContainer" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oDh-ln-yrr"/>
+                        <viewControllerLayoutGuide type="bottom" id="6eA-Lj-45C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ual-da-G3w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-3Q-ZYZ">
+                                <rect key="frame" x="0.0" y="197" width="375" height="470"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="kDR-NV-kCk" kind="embed" id="5K0-HU-t4D"/>
+                                </connections>
+                            </containerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vb1-Mo-T2H">
+                                <rect key="frame" x="0.0" y="159" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create New Group" id="boH-IU-gvN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Oib-rA-oyt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="BMh-Rw-QSl"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJk-QT-KOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="2670"/>
         </scene>
         <!--Group-->
         <scene sceneID="MZZ-2A-sCV">
@@ -784,7 +770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="2490"/>
+            <point key="canvasLocation" x="1046" y="1904"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BN5-tR-ejq">
@@ -861,7 +847,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyY-69-Fbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="999"/>
+            <point key="canvasLocation" x="-868" y="999"/>
         </scene>
     </scenes>
     <resources>

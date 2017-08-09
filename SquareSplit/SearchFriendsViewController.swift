@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class searchFriends: UITableViewController, UISearchResultsUpdating {
+class SearchFriends: UITableViewController, UISearchResultsUpdating {
     
     @IBOutlet var searchFriends: UITableView!
     var usersArray = [NSDictionary?]()
