@@ -364,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhD-jt-BRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1546" y="1028"/>
+            <point key="canvasLocation" x="-1622" y="1785"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qk0-LY-HHI">
@@ -391,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypt-dS-Xge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="1027"/>
+            <point key="canvasLocation" x="-868" y="1786"/>
         </scene>
         <!--Container View Controller-->
         <scene sceneID="mA8-xm-dbk">
@@ -590,21 +590,14 @@
             </objects>
             <point key="canvasLocation" x="104.8" y="1027.736131934033"/>
         </scene>
-        <!--Add Users-->
+        <!--Search Friends-->
         <scene sceneID="jf3-kM-DSN">
             <objects>
                 <tableViewController id="kDR-NV-kCk" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="e5K-qR-5su">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textField key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Group Name" textAlignment="natural" minimumFontSize="17" id="hPY-mM-EJ7">
-                            <rect key="frame" x="0.0" y="88" width="375" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="l2M-2d-1av" detailTextLabel="NBF-40-Ezu" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="fWn-S7-yZw">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -637,28 +630,64 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Add Users" id="16H-e6-1RB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="ofb-Fc-cgz">
-                            <connections>
-                                <action selector="cancelWith_sender:" destination="kDR-NV-kCk" id="8gD-Sj-X4q"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oz9-t0-izZ">
-                            <connections>
-                                <action selector="createGroup:" destination="kDR-NV-kCk" id="z2t-Eb-QDK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="groupNameField" destination="hPY-mM-EJ7" id="vJW-2E-SUB"/>
                         <outlet property="searchFriends" destination="e5K-qR-5su" id="xes-on-P6k"/>
-                        <segue destination="AKz-93-WD1" kind="show" identifier="toGroup" id="Vma-Rm-J2d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="1854"/>
+            <point key="canvasLocation" x="1751" y="1784"/>
+        </scene>
+        <!--Create New Square-->
+        <scene sceneID="y5w-zM-3cT">
+            <objects>
+                <viewController id="Cug-Em-3XH" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cr2-af-kGy"/>
+                        <viewControllerLayoutGuide type="bottom" id="eGH-Kg-fnW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZAA-On-lcM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-3Q-ZYZ">
+                                <rect key="frame" x="0.0" y="268" width="375" height="399"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="kDR-NV-kCk" kind="embed" id="5K0-HU-t4D"/>
+                                </connections>
+                            </containerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ntn-hM-7or">
+                                <rect key="frame" x="0.0" y="72" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create New Square" id="ssK-Ge-61e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="YdT-e2-lV6">
+                            <connections>
+                                <action selector="cancelWith_sender:" destination="kDR-NV-kCk" id="JCH-n6-b1V"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="XqH-Wj-DCg">
+                            <connections>
+                                <action selector="createGroup:" destination="kDR-NV-kCk" id="HdJ-xP-dVm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="groupNameField" destination="Ntn-hM-7or" id="E1o-4e-yLh"/>
+                        <segue destination="AKz-93-WD1" kind="show" identifier="toGroup" id="Pic-St-jiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPA-g7-M2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="1785"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uXM-Cx-8Nd">
@@ -685,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFY-bG-0ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2278" y="1028"/>
+            <point key="canvasLocation" x="-2383" y="1785"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B2N-YE-CQS">
@@ -700,12 +729,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kDR-NV-kCk" kind="relationship" relationship="rootViewController" id="jZt-31-73m"/>
+                        <segue destination="Cug-Em-3XH" kind="show" id="JxH-FF-RKg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-PZ-vjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="1854"/>
+            <point key="canvasLocation" x="105" y="1785"/>
         </scene>
         <!--Group-->
         <scene sceneID="MZZ-2A-sCV">
@@ -755,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="1854"/>
+            <point key="canvasLocation" x="1070" y="2491"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BN5-tR-ejq">
@@ -832,7 +861,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyY-69-Fbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="999"/>
+            <point key="canvasLocation" x="1820" y="999"/>
         </scene>
     </scenes>
     <resources>
