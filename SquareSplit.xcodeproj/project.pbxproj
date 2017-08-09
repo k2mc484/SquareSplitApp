@@ -21,7 +21,7 @@
 		8B508FEA1F1D6F9E00DA3157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FE91F1D6F9E00DA3157 /* ViewController.swift */; };
 		8B508FEF1F1D704D00DA3157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B508FEE1F1D704C00DA3157 /* Main.storyboard */; };
 		8B508FFB1F1FBCAC00DA3157 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FFA1F1FBCAC00DA3157 /* HomeScreenViewController.swift */; };
-		8B5244B41F2925EB00CF8DFE /* SearchFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5244B31F2925EB00CF8DFE /* SearchFriendsViewController.swift */; };
+		8B5244B41F2925EB00CF8DFE /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5244B31F2925EB00CF8DFE /* NewGroupViewController.swift */; };
 		8B5244B61F2933D100CF8DFE /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5244B51F2933D100CF8DFE /* GroupViewController.swift */; };
 		A0B053FAA0F182CCC8EEC2CE /* Pods_SquareSplitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08B171545886C0BB2979D29 /* Pods_SquareSplitTests.framework */; };
 		B150960824225678880B9B60 /* Pods_SquareSplitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEBD5AAD2B17653151818D7 /* Pods_SquareSplitUITests.framework */; };
@@ -68,7 +68,7 @@
 		8B508FE91F1D6F9E00DA3157 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B508FEE1F1D704C00DA3157 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B508FFA1F1FBCAC00DA3157 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		8B5244B31F2925EB00CF8DFE /* SearchFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFriendsViewController.swift; sourceTree = "<group>"; };
+		8B5244B31F2925EB00CF8DFE /* NewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		8B5244B51F2933D100CF8DFE /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		9EEBD5AAD2B17653151818D7 /* Pods_SquareSplitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareSplitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA8BEABBA078CDA2BF21313 /* Pods-SquareSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplit/Pods-SquareSplit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */,
 				8B508FFA1F1FBCAC00DA3157 /* HomeScreenViewController.swift */,
 				8B5244B51F2933D100CF8DFE /* GroupViewController.swift */,
-				8B5244B31F2925EB00CF8DFE /* SearchFriendsViewController.swift */,
+				8B5244B31F2925EB00CF8DFE /* NewGroupViewController.swift */,
 				8B2985E61F391512000B2D96 /* GoogleService-Info.plist */,
 				8B00E04F1F191EA9002DBD9D /* Info.plist */,
 				8B00E04A1F191EA9002DBD9D /* Assets.xcassets */,
@@ -472,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5244B41F2925EB00CF8DFE /* SearchFriendsViewController.swift in Sources */,
+				8B5244B41F2925EB00CF8DFE /* NewGroupViewController.swift in Sources */,
 				8B00E0441F191EA8002DBD9D /* AppDelegate.swift in Sources */,
 				8B2985E11F2FAB0B000B2D96 /* ContainerViewController.swift in Sources */,
 				8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */,
