@@ -595,7 +595,7 @@
             <objects>
                 <tableViewController id="kDR-NV-kCk" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="e5K-qR-5su">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -637,7 +637,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="1784"/>
+            <point key="canvasLocation" x="1756" y="1906"/>
         </scene>
         <!--Create New Square-->
         <scene sceneID="y5w-zM-3cT">
@@ -652,7 +652,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-3Q-ZYZ">
-                                <rect key="frame" x="0.0" y="268" width="375" height="399"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="kDR-NV-kCk" kind="embed" id="5K0-HU-t4D"/>
@@ -671,12 +671,12 @@
                     <navigationItem key="navigationItem" title="Create New Square" id="ssK-Ge-61e">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="YdT-e2-lV6">
                             <connections>
-                                <action selector="cancelWith_sender:" destination="kDR-NV-kCk" id="JCH-n6-b1V"/>
+                                <action selector="cancel:" destination="Cug-Em-3XH" id="QJR-ma-wZx"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="XqH-Wj-DCg">
                             <connections>
-                                <action selector="createGroup:" destination="kDR-NV-kCk" id="HdJ-xP-dVm"/>
+                                <action selector="createGroup:" destination="Cug-Em-3XH" id="bCY-uf-vJn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -687,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPA-g7-M2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="1785"/>
+            <point key="canvasLocation" x="1000.8" y="1784.257871064468"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uXM-Cx-8Nd">
@@ -734,7 +734,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-PZ-vjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="1785"/>
+            <point key="canvasLocation" x="138" y="1904"/>
         </scene>
         <!--Group-->
         <scene sceneID="MZZ-2A-sCV">
@@ -784,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="2491"/>
+            <point key="canvasLocation" x="1001" y="2490"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BN5-tR-ejq">
@@ -811,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iT-U0-El8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="1000"/>
+            <point key="canvasLocation" x="1001" y="999"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="6oV-6r-Nau">

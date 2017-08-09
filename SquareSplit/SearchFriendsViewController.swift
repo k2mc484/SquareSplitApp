@@ -149,9 +149,13 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
      // Pass the selected object to the new view controller.
      }
      */
-    @IBAction func cancel(_sender: Any)
-    {
-        dismiss(animated: true, completion: nil)
+    
+    
+        @IBAction func cancel(_ sender: Any) {
+                
+                dismiss(animated: true, completion: nil)
+    
+
     }
     func updateSearchResults(for searchController: UISearchController) {
         //update search results
