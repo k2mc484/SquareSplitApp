@@ -70,7 +70,7 @@ class ContainerViewController: UIViewController {
        
             if(menuShowing){
                 sideBarLeading.constant = -240
-                sideBarTrailing.constant = 240
+                sideBarTrailing.constant = 0
                 
                 groupsLeading.constant = 0
                 groupsTrailing.constant = 0
