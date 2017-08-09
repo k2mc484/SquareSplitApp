@@ -64,8 +64,7 @@ class ContainerViewController: UIViewController {
             
             
             self.usernameSidebarLabel.text = username
-            self.firstSidebarLabel.text = first
-            self.lastSidebarLabel.text = last
+            self.firstSidebarLabel.text = first + " " + last
             
         })
     }
