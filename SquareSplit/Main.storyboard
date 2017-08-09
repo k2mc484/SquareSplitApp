@@ -576,6 +576,7 @@
                         <outlet property="lastSidebarLabel" destination="OnP-UD-r8b" id="gvP-ZS-Gco"/>
                         <outlet property="navigationLeading" destination="9vf-oC-9Bl" id="PGa-U7-YPz"/>
                         <outlet property="navigationTrailing" destination="Q9u-Zh-Dhf" id="JXZ-87-z5n"/>
+                        <outlet property="segmentController" destination="Wk2-v9-b7v" id="4mI-K2-CnM"/>
                         <outlet property="sideBarLeading" destination="QGx-gT-4ns" id="Tkj-AL-mqf"/>
                         <outlet property="sideBarTrailing" destination="mRm-mn-eD4" id="hi2-ZF-HDt"/>
                         <outlet property="usernameSidebarLabel" destination="4vT-YY-Jus" id="nuv-QK-xKm"/>
@@ -587,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGd-Gh-Xsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="1028"/>
+            <point key="canvasLocation" x="104.8" y="1027.736131934033"/>
         </scene>
         <!--Add Users-->
         <scene sceneID="jf3-kM-DSN">

@@ -23,6 +23,9 @@ class ContainerViewController: UIViewController {
 
     var menuShowing = false
     
+    @IBOutlet weak var segmentController: UISegmentedControl!
+    
+    
     @IBOutlet weak var sideBarTrailing: NSLayoutConstraint!
     @IBOutlet weak var sideBarLeading: NSLayoutConstraint!
    
@@ -144,7 +147,13 @@ class ContainerViewController: UIViewController {
         
         self.containerViewHome.alpha = 1
         self.containerViewGroups.alpha = 0
+        
+        segmentController.selectedSegmentIndex = 0;
+        //segmentController.selectedSegmentIndex = UISegmentedControlNoSegment;
+
     }
+   
+
     
     @IBAction func sidebarGroups(_ sender: Any) {
         sideBarLeading.constant = -240
@@ -165,6 +174,8 @@ class ContainerViewController: UIViewController {
         
         self.containerViewHome.alpha = 0
         self.containerViewGroups.alpha = 1
+        
+        segmentController.selectedSegmentIndex = 1;
         
     }
     @IBAction func sidebarNewGroup(_ sender: Any) {
