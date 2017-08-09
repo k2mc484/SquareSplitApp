@@ -147,14 +147,14 @@
                                                     <constraint firstAttribute="height" constant="3" id="h97-R7-jsn"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-jm-FIB">
+                                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-jm-FIB">
                                                 <rect key="frame" x="297" y="39" width="8" height="11"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="8" id="H4g-JG-wy9"/>
                                                     <constraint firstAttribute="height" constant="11" id="v0v-1k-JII"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-zX-tCS">
+                                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-zX-tCS">
                                                 <rect key="frame" x="296" y="100" width="11" height="11"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="11" id="8Z7-ap-48n"/>
