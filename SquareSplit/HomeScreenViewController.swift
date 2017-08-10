@@ -27,10 +27,8 @@ class HomeScreenViewController: UIViewController {
     
     //For display of user info
     @IBOutlet weak var UsernameLabel: UILabel!
-   
     
     //Toggle the menu screen
-    
     override func viewDidLoad() {
         
             super.viewDidLoad()
@@ -48,11 +46,12 @@ class HomeScreenViewController: UIViewController {
             ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 let value = snapshot.value as? NSDictionary
-                let username = value?["Username"] as? String ?? ""
+                let last = value?["Last"] as? String ?? ""
+                let first = value?["First"] as? String ?? ""
                 
 
 
-                self.UsernameLabel.text = username
+                self.UsernameLabel.text = "Welcome, " + first + " " + last
             })
     }
 

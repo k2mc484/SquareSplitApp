@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // Status bar is gone
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func displayMyAlertMessage(userMessage:String)
     {
         let myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.alert);
