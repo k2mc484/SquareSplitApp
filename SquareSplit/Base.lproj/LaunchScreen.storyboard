@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,20 +18,21 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to SquareSplit" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gaw-F8-b6v">
-                                <rect key="frame" x="99" y="318" width="176" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-icon" translatesAutoresizingMaskIntoConstraints="NO" id="iBr-Gb-GMt">
+                                <rect key="frame" x="147" y="308" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="68o-Zz-l1f"/>
+                                    <constraint firstAttribute="height" constant="120" id="iSW-RJ-eHA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.037939969450235367" green="0.12212458997964859" blue="0.2550041675567627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gaw-F8-b6v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GZF-hs-ELT"/>
-                            <constraint firstItem="gaw-F8-b6v" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sbV-Pn-c4f"/>
+                            <constraint firstItem="iBr-Gb-GMt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dV8-9l-LVI"/>
+                            <constraint firstItem="iBr-Gb-GMt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qu0-xO-pC4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +41,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo-icon" width="1536" height="1536"/>
+    </resources>
 </document>
