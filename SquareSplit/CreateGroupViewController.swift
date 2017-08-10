@@ -20,7 +20,8 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
     var groupName = [String]()
     var userID = [NSDictionary]()
     
-    @IBOutlet weak var groupNameField: UITextField!
+    var groupNameField = ""
+    //@IBOutlet weak var groupNameField: UITextField!
     var databaseref = Database.database().reference()
     var uidref = Database.database().reference()
     let searchController = UISearchController(searchResultsController: nil)
@@ -205,7 +206,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
     @IBAction func createGroup(_ sender: Any) {
         ref = Database.database().reference()
         let groupReference = self.ref?.child("Groups").childByAutoId()
-        let values = ["Name": self.groupNameField.text]
+        let values = ["Name": self.groupNameField]
         print(groupID.count)
         groupReference?.updateChildValues(values as Any as! [AnyHashable : Any] , withCompletionBlock: {
             (error, reference) in
@@ -236,7 +237,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         for index in 0...groupID.count-1
         {
             let newref = self.ref?.child("Users").child(groupID[index]).child("Groups").child((groupReference?.key)!)
-            newref?.updateChildValues(["Name": self.groupNameField.text as Any], withCompletionBlock: {
+            newref?.updateChildValues(["Name": self.groupNameField as Any], withCompletionBlock: {
                 (error, reference) in
                 
                 if error == nil
