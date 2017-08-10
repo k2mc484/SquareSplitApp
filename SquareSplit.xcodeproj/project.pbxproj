@@ -151,6 +151,7 @@
 				8B00E0431F191EA8002DBD9D /* AppDelegate.swift */,
 				8B00E04C1F191EA9002DBD9D /* LaunchScreen.storyboard */,
 				8B508FEE1F1D704C00DA3157 /* Main.storyboard */,
+				8B00E0431F191EA8002DBD9D /* AppDelegate.swift */,
 				8B2985E01F2FAB0B000B2D96 /* ContainerViewController.swift */,
 				8B508FE91F1D6F9E00DA3157 /* ViewController.swift */,
 				8B508FE31F1D6DBF00DA3157 /* PasswordResetViewController.swift */,

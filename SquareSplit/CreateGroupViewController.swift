@@ -207,7 +207,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         let groupReference = self.ref?.child("Groups").childByAutoId()
         let values = ["Name": self.groupNameField.text]
         print(groupID.count)
-        groupReference?.updateChildValues(values, withCompletionBlock: {
+        groupReference?.updateChildValues(values as Any as! [AnyHashable : Any] , withCompletionBlock: {
             (error, reference) in
             
             if error == nil

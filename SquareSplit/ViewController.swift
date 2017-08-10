@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  CustomEmailLogin
 //
-//  Created by Christopher Ching on 2017-01-31.
-//  Copyright © 2017 Christopher Ching. All rights reserved.
+//  Created by Alex Gushulak on 2017-06-31.
+//  Copyright © 2017 Alex Gushulak. All rights reserved.
 //
 
 import UIKit
@@ -12,8 +12,8 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    // Outlets to Login Page for Email and Password
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
