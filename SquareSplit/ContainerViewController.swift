@@ -148,7 +148,6 @@ class ContainerViewController: UIViewController {
         self.containerViewGroups.alpha = 0
         
         segmentController.selectedSegmentIndex = 0;
-        //segmentController.selectedSegmentIndex = UISegmentedControlNoSegment;
 
     }
    
@@ -198,13 +197,55 @@ class ContainerViewController: UIViewController {
     }
     
     @IBAction func sidebarInviteFriends(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
         
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
     }
     @IBAction func sidebarHelp(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
         
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
     }
     @IBAction func sidebarSettings(_ sender: Any) {
+        sideBarLeading.constant = -240
+        sideBarTrailing.constant = 0
         
+        groupsLeading.constant = 0
+        groupsTrailing.constant = 0
+        
+        homeLeading.constant = 0
+        homeTrailing.constant = 0
+        
+        navigationLeading.constant = 0
+        navigationTrailing.constant = 0
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
     }
     
     
