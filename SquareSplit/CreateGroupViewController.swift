@@ -236,7 +236,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         for index in 0...groupID.count-1
         {
             let newref = self.ref?.child("Users").child(groupID[index]).child("Groups").child((groupReference?.key)!)
-            newref?.updateChildValues(["Name": self.groupNameField.text], withCompletionBlock: {
+            newref?.updateChildValues(["Name": self.groupNameField.text as Any], withCompletionBlock: {
                 (error, reference) in
                 
                 if error == nil
