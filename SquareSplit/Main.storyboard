@@ -827,6 +827,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="DaE-ed-OUs"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="listGroups" destination="pkw-Q4-jKk" id="tFK-cT-77z"/>
                     </connections>
@@ -840,7 +841,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="searchFriends" id="kDR-NV-kCk" customClass="searchFriends" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="e5K-qR-5su">
-                        <rect key="frame" x="0.0" y="94" width="414" height="642"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -889,7 +890,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchFriends" destination="e5K-qR-5su" id="xes-on-P6k"/>
@@ -898,7 +899,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="1860"/>
+            <point key="canvasLocation" x="1809" y="1832"/>
         </scene>
         <!--Create New Group-->
         <scene sceneID="yCU-a9-KHd">
@@ -990,7 +991,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qUG-aq-nEr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUG-aq-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.046549208462238312" green="0.12211001664400101" blue="0.25498467683792114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1090,9 +1091,10 @@
         <!--Navigation Controller-->
         <scene sceneID="CoQ-oM-xMe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lrj-yW-JNb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lrj-yW-JNb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="7Tf-Bg-Mbp">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7Tf-Bg-Mbp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.046549208462238312" green="0.12211001664400101" blue="0.25498467683792114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1120,7 +1122,7 @@
         <image name="sslogo" width="1102" height="221"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="znD-kB-Wbp"/>
         <segue reference="poI-6U-pIb"/>
+        <segue reference="ab2-0A-ipG"/>
     </inferredMetricsTieBreakers>
 </document>
