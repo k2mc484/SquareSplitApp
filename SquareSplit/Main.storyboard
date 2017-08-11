@@ -792,7 +792,7 @@
             <objects>
                 <tableViewController id="kqz-EK-9cF" customClass="ListofGroups" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pkw-Q4-jKk">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -829,7 +829,7 @@
                     <navigationItem key="navigationItem" id="DaE-ed-OUs"/>
                     <connections>
                         <outlet property="listGroups" destination="pkw-Q4-jKk" id="tFK-cT-77z"/>
-                        <segue destination="AKz-93-WD1" kind="show" identifier="myGroup" id="gUN-aA-WN9"/>
+                        <segue destination="amB-Kn-DKg" kind="show" identifier="myGroup" id="gUN-aA-WN9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBV-eT-4SE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -901,7 +901,7 @@
                     <connections>
                         <outlet property="groupNameField" destination="hPY-mM-EJ7" id="vJW-2E-SUB"/>
                         <outlet property="searchFriends" destination="e5K-qR-5su" id="xes-on-P6k"/>
-                        <segue destination="AKz-93-WD1" kind="show" identifier="toGroup" id="Vma-Rm-J2d"/>
+                        <segue destination="amB-Kn-DKg" kind="show" identifier="toGroup" id="Vma-Rm-J2d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -983,13 +983,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMx-Fd-MKH">
-                                        <rect key="frame" x="88" y="19" width="238" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-cg-L0J">
                                         <rect key="frame" x="14" y="16" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1003,22 +996,29 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="New Item"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMx-Fd-MKH">
+                                        <rect key="frame" x="88" y="19" width="238" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.046549208459999998" green="0.1221100166" blue="0.25498467679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationItem key="navigationItem" id="Tr1-zp-ve1"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="groupName" destination="VMx-Fd-MKH" id="93z-MW-L2g"/>
-                        <segue destination="lrj-yW-JNb" kind="show" identifier="backToGroups" id="uUm-0m-Ilf"/>
+                        <segue destination="XXV-ox-2xg" kind="show" identifier="backToGroups" id="AgH-64-6V2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2075.36231884058" y="1808.967391304348"/>
+            <point key="canvasLocation" x="2967" y="2075"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="6oV-6r-Nau">
@@ -1069,7 +1069,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRi-zI-I3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="1027"/>
+            <point key="canvasLocation" x="996" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ORX-yL-U83">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="amB-Kn-DKg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zg-Hv-NMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AKz-93-WD1" kind="relationship" relationship="rootViewController" id="SOa-Mk-1eB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJu-3J-Yn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076.8115942028985" y="2100.8152173913045"/>
         </scene>
     </scenes>
     <resources>
@@ -1083,9 +1101,8 @@
         <image name="sslogo" width="1102" height="221"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uUm-0m-Ilf"/>
+        <segue reference="poI-6U-pIb"/>
+        <segue reference="AgH-64-6V2"/>
         <segue reference="gUN-aA-WN9"/>
-        <segue reference="znD-kB-Wbp"/>
-        <segue reference="PcD-JB-ZCK"/>
     </inferredMetricsTieBreakers>
 </document>

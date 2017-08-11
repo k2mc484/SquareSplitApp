@@ -15,7 +15,9 @@ class group: UIViewController {
     var passedGroupName = String()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         groupName.text = passedGroupName
+        
         
         }
         

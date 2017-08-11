@@ -132,7 +132,9 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
                 performSegue(withIdentifier: "myGroup", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let groupController = segue.destination as! group
+        let navController = segue.destination as! UINavigationController
+        let groupController = navController.viewControllers.first as! group
+
         groupController.passedGroupName = name
     }
 
