@@ -19,7 +19,7 @@ class HomeScreenViewController: UIViewController {
 
     var ref: DatabaseReference!
     var refHandle: UInt!
-   
+    var numGroups = 0
     
     //For menu toggle
     var menuShowing = false
@@ -41,18 +41,17 @@ class HomeScreenViewController: UIViewController {
         })
         let userID: String = (Auth.auth().currentUser?.uid)!
         
-       
-            //Display user info
-            ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
+        //Display user info
+        ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 
-                let value = snapshot.value as? NSDictionary
-                let last = value?["Last"] as? String ?? ""
-                let first = value?["First"] as? String ?? ""
-                
-
-
-                self.UsernameLabel.text = "Welcome, " + first + " " + last
-            })
+            let value = snapshot.value as? NSDictionary
+            let last = value?["Last"] as? String ?? ""
+            let first = value?["First"] as? String ?? ""
+            
+            self.UsernameLabel.text =  first + " " + last
+        })
+        
+        
     }
 
 
