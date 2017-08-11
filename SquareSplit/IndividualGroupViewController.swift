@@ -11,20 +11,21 @@ import FirebaseAuth
 
 class group: UIViewController {
     
-    @IBOutlet weak var currentUser: UILabel!
+    @IBOutlet weak var groupName: UILabel!
+    var passedGroupName = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = Auth.auth().currentUser
-        if let user = user {
-            
-            
-            let email = user.email
-            currentUser.text = email
-            
+        groupName.text = passedGroupName
+        
         }
         
         // Do any additional setup after loading the view.
+    
+    @IBAction func back(_ sender: Any) {
+        performSegue(withIdentifier: "backToGroups", sender: nil)
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

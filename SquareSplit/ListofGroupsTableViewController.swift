@@ -122,8 +122,20 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
         
         tableView.reloadData()
     }
-    
-    
+    var name = ""
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let group:NSDictionary?
+        group = self.groupsArray[indexPath.row]
+        
+       name = (group?["Name"] as? String)!
+        
+                performSegue(withIdentifier: "myGroup", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let groupController = segue.destination as! group
+        groupController.passedGroupName = name
+    }
+
     
 }
 
