@@ -24,7 +24,7 @@ class PasswordResetViewController: UIViewController {
     }
     func displayMyAlertMessage(userMessage:String)
     {
-        let myAlert = UIAlertController(title:"Alert", message:userMessage, preferredStyle: UIAlertControllerStyle.alert);
+        let myAlert = UIAlertController(title:"Email Sent!", message:userMessage, preferredStyle: UIAlertControllerStyle.alert);
         
         let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.default, handler:nil);
         
@@ -38,7 +38,7 @@ class PasswordResetViewController: UIViewController {
         
         if let email = emailTextfield.text{
             //Alert telling user that an email has been sent
-            self.displayMyAlertMessage(userMessage: "An email has been sent to reset your password!");
+            self.displayMyAlertMessage(userMessage: "Please check email to reset pasword!");
             
             Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             }
