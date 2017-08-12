@@ -115,7 +115,7 @@ class ContainerViewController: UIViewController {
                 groupsTrailing.constant = -240
                
                 homeLeading.constant = 240
-                homeTrailing.constant = 240
+                homeTrailing.constant = -240
                 
                 navigationLeading.constant = 240
                 navigationTrailing.constant = -240
