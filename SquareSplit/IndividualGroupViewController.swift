@@ -11,6 +11,11 @@ import FirebaseAuth
 
 class group: UIViewController {
     
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+
+    }
     @IBOutlet weak var currentUser: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
