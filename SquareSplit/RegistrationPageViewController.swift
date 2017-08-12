@@ -60,8 +60,10 @@ class RegistrationPageViewController: UIViewController
                     //Send user information to the database
                     self.ref.child("Users").child(userID).setValue(["Email":userEmail,"Password": userPassword,"Username":userUsername, "User ID": userID, "First":userFirst,"Last":userLast, "Balance":self.balance]);
                     //Go back to login page
-                    self.performSegue(withIdentifier: "goToLogin", sender: self)
-                    
+                    if user != nil {
+                        // User is found, go to home screen
+                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                    }
                     // Send verifiation email
                     Auth.auth().currentUser?.sendEmailVerification { (error) in
                     }
