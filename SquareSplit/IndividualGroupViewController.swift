@@ -8,16 +8,44 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class group: UIViewController {
     
+    @IBOutlet weak var personalTotal: UILabel!
+    @IBOutlet weak var eventTotal: UILabel!
     @IBOutlet weak var groupName: UILabel!
+    var ref: DatabaseReference!
     var passedGroupName = String()
+    var passedGroupID = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         groupName.text = passedGroupName
+        ref = Database.database().reference()
+        let userID: String = (Auth.auth().currentUser?.uid)!
         
+        ref.child("Users").child(userID).child("Groups").child(passedGroupID).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            let debit = value?["Debit"] as? String
+            let credit = value?["Credit"] as? String
+            let name = value?["Name"] as? String
+            
+            let personalTotalDoub = Double(debit!)! - Double(credit!)!
+            
+            self.personalTotal.text = "$" + String(personalTotalDoub)
+            
+            
+        })
+        ref.child("Groups").child(passedGroupID).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            let total = value?["Total"] as? String
+            self.eventTotal.text = "$"+total!
+            
+            
+        })
         
         }
         

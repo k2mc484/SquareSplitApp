@@ -123,11 +123,14 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
         tableView.reloadData()
     }
     var name = ""
+    var groupId = ""
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let group:NSDictionary?
         group = self.groupsArray[indexPath.row]
         
        name = (group?["Name"] as? String)!
+        groupId = (group?["ID"] as? String)!
+        
         
                 performSegue(withIdentifier: "myGroup", sender: nil)
     }
@@ -136,8 +139,10 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
         let groupController = navController.viewControllers.first as! group
 
         groupController.passedGroupName = name
+        groupController.passedGroupID = groupId
     }
-
+    
+    
     
 }
 

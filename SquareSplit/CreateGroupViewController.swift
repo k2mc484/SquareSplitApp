@@ -205,7 +205,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
     @IBAction func createGroup(_ sender: Any) {
         ref = Database.database().reference()
         let groupReference = self.ref?.child("Groups").childByAutoId()
-        let values = ["Name": self.groupNameField.text]
+        let values = ["Name": self.groupNameField.text, "Total": "0", "ID": groupReference?.key] as [String : Any]
         print(groupID.count)
         groupReference?.updateChildValues(values as Any as! [AnyHashable : Any] , withCompletionBlock: {
             (error, reference) in
@@ -236,7 +236,23 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         for index in 0...groupID.count-1
         {
             let newref = self.ref?.child("Users").child(groupID[index]).child("Groups").child((groupReference?.key)!)
-            newref?.updateChildValues(["Name": self.groupNameField.text as Any], withCompletionBlock: {
+            newref?.updateChildValues(["Name": self.groupNameField.text as Any, "ID": groupReference?.key], withCompletionBlock: {
+                (error, reference) in
+                
+                if error == nil
+                {
+                    print(groupReference?.key)
+                }
+                else
+                {
+                    print(error.debugDescription)
+                }
+                
+        
+            })
+            //Sets debts and credits for all users in database to 0
+            let balance = ["Debit": "0", "Credit": "0"]
+            newref?.updateChildValues(balance, withCompletionBlock: {
                 (error, reference) in
                 
                 if error == nil
@@ -247,10 +263,11 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
                 {
                     print(error.debugDescription)
                 }
+                
             })
 
         }
-        performSegue(withIdentifier: "toGroup", sender: nil)
+        //performSegue(withIdentifier: "toGroup", sender: nil)
         
     }
 }
