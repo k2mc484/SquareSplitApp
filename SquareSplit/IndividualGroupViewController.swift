@@ -36,10 +36,17 @@ class group: UIViewController {
             
             self.personalTotal.text = "$" + String(personalTotalDoub)
             
-            let email = user.email
-            currentUser.text = email
             
-        }
+        })
+        ref.child("Groups").child(passedGroupID).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            let total = value?["Total"] as? String
+            self.eventTotal.text = "$"+total!
+            
+            
+        })
+        
     }
     
     // Do any additional setup after loading the view.

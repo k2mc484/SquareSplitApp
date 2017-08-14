@@ -1375,6 +1375,8 @@
         <image name="sslogo" width="1102" height="221"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Z6q-zQ-ufe"/>
+        <segue reference="RcP-DY-cha"/>
         <segue reference="jZ7-Cn-jNy"/>
         <segue reference="wvj-2D-Wnv"/>
     </inferredMetricsTieBreakers>
