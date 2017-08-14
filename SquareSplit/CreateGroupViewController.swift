@@ -19,6 +19,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
     var groupID  = [String]()
     var groupName = [String]()
     var userID = [NSDictionary]()
+    var groupKey = ""
     
     var groupNameField = ""
     //@IBOutlet weak var groupNameField: UITextField!
@@ -235,6 +236,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
                 
             })
         }
+       
         for index in 0...groupID.count-1
         {
             let newref = self.ref?.child("Users").child(groupID[index]).child("Groups").child((groupReference?.key)!)
@@ -267,7 +269,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
                 }
                 
             })
-
+            groupKey = (groupReference?.key)!
         }
         let userId: String = (Auth.auth().currentUser?.uid)!
         
@@ -283,7 +285,14 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         ref?.child("Users").child(userId).updateChildValues(childUpdates)
         
 
-       // performSegue(withIdentifier: "toGroup", sender: nil)
+        performSegue(withIdentifier: "toGroup", sender: nil)
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navController = segue.destination as! UINavigationController
+        let groupController = navController.viewControllers.first as! group
+        
+        groupController.passedGroupName = self.groupNameField
+        groupController.passedGroupID = groupKey
     }
 }
