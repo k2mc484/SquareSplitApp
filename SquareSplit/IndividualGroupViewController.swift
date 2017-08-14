@@ -8,25 +8,47 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class group: UIViewController {
     
-    
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-
-    }
-    @IBOutlet weak var currentUser: UILabel!
+    @IBOutlet weak var personalTotal: UILabel!
+    @IBOutlet weak var eventTotal: UILabel!
+    @IBOutlet weak var groupName: UILabel!
+    var ref: DatabaseReference!
+    var passedGroupName = String()
+    var passedGroupID = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = Auth.auth().currentUser
-        if let user = user {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        groupName.text = passedGroupName
+        ref = Database.database().reference()
+        let userID: String = (Auth.auth().currentUser?.uid)!
+        
+        ref.child("Users").child(userID).child("Groups").child(passedGroupID).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            let debit = value?["Debit"] as? String
+            let credit = value?["Credit"] as? String
+            let name = value?["Name"] as? String
+            
+            let personalTotalDoub = Double(debit!)! - Double(credit!)!
+            
+            self.personalTotal.text = "$" + String(personalTotalDoub)
             
             let email = user.email
             currentUser.text = email
             
         }
     }
+    
+    // Do any additional setup after loading the view.
+    
+    @IBAction func back(_ sender: Any) {
+        performSegue(withIdentifier: "backToGroups", sender: nil)
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
