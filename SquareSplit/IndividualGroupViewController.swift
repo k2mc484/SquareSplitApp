@@ -22,13 +22,10 @@ class group: UIViewController {
         let user = Auth.auth().currentUser
         if let user = user {
             
-            
             let email = user.email
             currentUser.text = email
             
         }
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
