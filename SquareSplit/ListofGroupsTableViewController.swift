@@ -18,8 +18,6 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
     var filteredGroups = [NSDictionary?]()
     var ref:DatabaseReference?
     
-    
-    
     var databaseref = Database.database().reference().child("Users")
     let searchController = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
