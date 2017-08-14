@@ -21,6 +21,7 @@ class RegistrationPageViewController: UIViewController
     @IBOutlet weak var lastTextfield: UITextField!
     
     var balance = 0
+    var groupsIn = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -58,7 +59,7 @@ class RegistrationPageViewController: UIViewController
                     let userFirst:String = self.firstTextfield.text!
                     let userLast:String = self.lastTextfield.text!
                     //Send user information to the database
-                    self.ref.child("Users").child(userID).setValue(["Email":userEmail,"Password": userPassword,"Username":userUsername, "User ID": userID, "First":userFirst,"Last":userLast, "Balance":self.balance]);
+                    self.ref.child("Users").child(userID).setValue(["Email":userEmail,"Password": userPassword,"Username":userUsername, "User ID": userID, "First":userFirst,"Last":userLast, "Balance":self.balance, "GroupsIn":self.groupsIn]);
                     //Go back to login page
                     if user != nil {
                         // User is found, go to home screen

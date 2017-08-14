@@ -251,6 +251,20 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
             })
 
         }
+        let userId: String = (Auth.auth().currentUser?.uid)!
+        
+        //Pulls the current GroupsIn value
+       // let num = self.ref?.child("Users").child(userId).child("GroupsIn")
+        let num = 5
+        //Increment num by 1
+        
+        
+        //Write to the database replacing the previous GroupsIn value
+        let groupsIn = ["GroupsIn": num  ]
+        let childUpdates = ["GroupsIn":groupsIn]
+        ref?.child("Users").child(userId).updateChildValues(childUpdates)
+        
+
         performSegue(withIdentifier: "toGroup", sender: nil)
         
     }
