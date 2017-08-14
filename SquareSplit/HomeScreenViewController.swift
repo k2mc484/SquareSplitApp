@@ -28,6 +28,9 @@ class HomeScreenViewController: UIViewController {
     //For display of user info
     @IBOutlet weak var UsernameLabel: UILabel!
     
+    @IBOutlet weak var GroupsInLabel: UILabel!
+
+    
     
     @IBOutlet weak var buttonTest: UIButton!
     
@@ -54,13 +57,20 @@ class HomeScreenViewController: UIViewController {
             
             self.UsernameLabel.text =  first + " " + last
             
-            self.buttonTest.layer.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-            self.buttonTest.layer.cornerRadius = 100
-            self.buttonTest.layer.borderWidth = 2
-            self.buttonTest.layer.borderColor = UIColor.blue.cgColor
+//            self.buttonTest.layer.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
+//            self.buttonTest.layer.cornerRadius = 100
+//            self.buttonTest.layer.borderWidth = 2
+//            self.buttonTest.layer.borderColor = UIColor.blue.cgColor
             
         })
         
+//        //For home screen under display user info
+//        ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
+//                let value = snapshot.value as? NSDictionary
+//                let groups = value?["GroupsIn"] as? String ?? ""
+//                
+//                self.GroupsInLabel.text = groups + "Active Groups"
+//            })
         
     }
 

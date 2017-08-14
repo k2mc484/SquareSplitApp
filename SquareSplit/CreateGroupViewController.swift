@@ -271,18 +271,19 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
             })
             groupKey = (groupReference?.key)!
         }
+        
+        //For create groups at end
         let userId: String = (Auth.auth().currentUser?.uid)!
-        
-        //Pulls the current GroupsIn value
-       // let num = self.ref?.child("Users").child(userId).child("GroupsIn")
-        let num = 5
-        //Increment num by 1
-        
-        
-        //Write to the database replacing the previous GroupsIn value
-        let groupsIn = ["GroupsIn": num  ]
-        let childUpdates = ["GroupsIn":groupsIn]
-        ref?.child("Users").child(userId).updateChildValues(childUpdates)
+        ref?.child("Users").child(userId).child("GroupsIn").observeSingleEvent(of: .value, with: { snapshot in
+            
+            let value = snapshot.value as AnyObject?
+            var groupsIn = (value as? NSNumber)?.intValue
+            groupsIn = groupsIn! + 1
+            
+            
+            let childUpdates = ["GroupsIn":groupsIn]
+            self.ref?.child("Users").child(userId).updateChildValues(childUpdates)
+        })
         
 
         performSegue(withIdentifier: "toGroup", sender: nil)
