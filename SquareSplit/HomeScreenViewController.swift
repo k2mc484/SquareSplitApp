@@ -41,7 +41,7 @@ class HomeScreenViewController: UIViewController {
         ref = Database.database().reference()
         refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
             let detaDict = snapshot.value as! [String:AnyObject]
-            print(detaDict)
+            //print(detaDict)
         })
         let userID: String = (Auth.auth().currentUser?.uid)!
         
