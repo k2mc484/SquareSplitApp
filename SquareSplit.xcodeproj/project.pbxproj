@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35174C691F3BBD340020F56F /* ListofGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */; };
+		3563C04B1F42612C0029A08A /* NewItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3563C04A1F42612C0029A08A /* NewItemsViewController.swift */; };
 		827A721733530D155BDE28AB /* Pods_SquareSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B22C38F30FC618E7C4AC8E /* Pods_SquareSplit.framework */; };
 		8B00E0441F191EA8002DBD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00E0431F191EA8002DBD9D /* AppDelegate.swift */; };
 		8B00E04B1F191EA9002DBD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B00E04A1F191EA9002DBD9D /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		31B22C38F30FC618E7C4AC8E /* Pods_SquareSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListofGroupsTableViewController.swift; sourceTree = "<group>"; };
+		3563C04A1F42612C0029A08A /* NewItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemsViewController.swift; sourceTree = "<group>"; };
 		35DAF064FDB07F4FB6EEB19D /* Pods-SquareSplitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplitUITests/Pods-SquareSplitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60648E815FB515462EE0A2DC /* Pods-SquareSplitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplitUITests/Pods-SquareSplitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7AF1E177AFE7BAC24273BF1C /* Pods-SquareSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplit/Pods-SquareSplit.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				8B508FEE1F1D704C00DA3157 /* Main.storyboard */,
 				8B5244B51F2933D100CF8DFE /* IndividualGroupViewController.swift */,
+				3563C04A1F42612C0029A08A /* NewItemsViewController.swift */,
 				35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */,
 				8B00E0431F191EA8002DBD9D /* AppDelegate.swift */,
 				8B508FE91F1D6F9E00DA3157 /* ViewController.swift */,
@@ -488,6 +491,7 @@
 				8B508FE41F1D6DBF00DA3157 /* PasswordResetViewController.swift in Sources */,
 				8B508FFB1F1FBCAC00DA3157 /* HomeScreenViewController.swift in Sources */,
 				35174C691F3BBD340020F56F /* ListofGroupsTableViewController.swift in Sources */,
+				3563C04B1F42612C0029A08A /* NewItemsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
