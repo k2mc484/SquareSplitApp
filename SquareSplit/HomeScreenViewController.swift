@@ -31,14 +31,17 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var GroupsInLabel: UILabel!
 
     
-    
-    @IBOutlet weak var buttonTest: UIButton!
+    @IBOutlet weak var valueDisplay: UIButton!
     
     
     //Toggle the menu screen
     override func viewDidLoad() {
         
             super.viewDidLoad()
+        
+        valueDisplay.layer.cornerRadius = 100
+        valueDisplay.layer.borderColor = UIColor(red:0.27, green:0.79, blue:0.85, alpha:1.0).cgColor
+        valueDisplay.layer.borderWidth = 2
         
         //Update username, first, and last on main page
         ref = Database.database().reference()
