@@ -74,6 +74,8 @@ class ContainerViewController: UIViewController {
         self.performSegue(withIdentifier: "goToGroupBuilder", sender: self)
     }
     
+   
+   
     //Segment controller for switching views
     @IBAction func showComponent(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -212,8 +214,10 @@ class ContainerViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         menuShowing = !menuShowing
+        self.performSegue(withIdentifier: "goToInviteFriends", sender: self)
     }
-    @IBAction func sidebarHelp(_ sender: Any) {
+    
+    @IBAction func sidebarAbout(_ sender: Any) {
         sideBarLeading.constant = -240
         sideBarTrailing.constant = 0
         
@@ -229,6 +233,7 @@ class ContainerViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         menuShowing = !menuShowing
+        self.performSegue(withIdentifier: "goToAbout", sender: self)
     }
     @IBAction func sidebarSettings(_ sender: Any) {
         sideBarLeading.constant = -240
@@ -246,6 +251,7 @@ class ContainerViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         menuShowing = !menuShowing
+        self.performSegue(withIdentifier: "goToSettings", sender: self)
     }
     
     

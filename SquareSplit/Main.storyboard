@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ph1-41-m6O">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ph1-41-m6O">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CE8-cC-Isk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-804" y="3.1484257871064472"/>
+            <point key="canvasLocation" x="369.375" y="2.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JbZ-Cr-XV7">
@@ -355,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRC-ae-GhJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.25" y="3.75"/>
+            <point key="canvasLocation" x="1275" y="3.75"/>
         </scene>
         <!--RegistrationViewController-->
         <scene sceneID="zWG-na-swI">
@@ -543,53 +543,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIU-uF-ZCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995.625" y="2.5"/>
+            <point key="canvasLocation" x="2169.375" y="2.5"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="QI2-yp-76S">
             <objects>
-                <viewController id="9jK-6p-hBk" sceneMemberID="viewController">
+                <viewController id="9jK-6p-hBk" customClass="AboutViewController" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hTi-Ij-ftq"/>
                         <viewControllerLayoutGuide type="bottom" id="zan-5a-W5b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ssg-77-4hz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkT-8v-Nbs">
-                                <rect key="frame" x="166" y="323" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkT-8v-Nbs">
+                                <rect key="frame" x="166" y="323" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6R-yK-Wk9">
-                                <rect key="frame" x="161" y="59" width="34" height="30"/>
+                                <rect key="frame" x="172" y="384" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                                 <connections>
-                                    <segue destination="XXV-ox-2xg" kind="show" id="wcL-5g-YsD"/>
+                                    <action selector="cancel:" destination="9jK-6p-hBk" eventType="touchUpInside" id="y06-bT-IJM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aLW-0g-j4Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhD-jt-BRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2349" y="2101"/>
+            <point key="canvasLocation" x="-1505.625" y="2590"/>
         </scene>
-        <!--View Controller-->
+        <!--Invite Friends View Controller-->
         <scene sceneID="Qk0-LY-HHI">
             <objects>
-                <viewController id="lHe-je-l6e" sceneMemberID="viewController">
+                <viewController id="lHe-je-l6e" customClass="InviteFriendsViewController" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tm0-uU-xbM"/>
                         <viewControllerLayoutGuide type="bottom" id="gN4-0F-vJt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CZv-iW-zO6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-V1-YYo">
@@ -604,16 +605,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                                 <connections>
-                                    <segue destination="XXV-ox-2xg" kind="show" id="ab2-0A-ipG"/>
+                                    <action selector="cancel:" destination="lHe-je-l6e" eventType="touchUpInside" id="iDR-6J-0gm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BKb-vY-5YJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypt-dS-Xge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2349" y="1380"/>
+            <point key="canvasLocation" x="-1506" y="1551"/>
         </scene>
         <!--Container View Controller-->
         <scene sceneID="mA8-xm-dbk">
@@ -624,14 +626,14 @@
                         <viewControllerLayoutGuide type="bottom" id="qcw-Fn-WMA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HLd-zQ-hyc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXO-Jx-RHE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wk2-v9-b7v">
-                                        <rect key="frame" x="101" y="27" width="119" height="29"/>
+                                        <rect key="frame" x="148" y="27" width="119" height="29"/>
                                         <segments>
                                             <segment title="Home"/>
                                             <segment title="Groups"/>
@@ -642,7 +644,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxa-vA-92R">
-                                        <rect key="frame" x="273" y="23" width="30" height="33"/>
+                                        <rect key="frame" x="367" y="23" width="30" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="A1m-jl-eAt"/>
                                             <constraint firstAttribute="height" constant="33" id="ch2-Wm-d1L"/>
@@ -673,13 +675,13 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" restorationIdentifier="Groups" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-PH-6vv" userLabel="Container View Groups">
-                                <rect key="frame" x="0.0" y="63" width="320" height="417"/>
+                                <rect key="frame" x="0.0" y="63" width="414" height="673"/>
                                 <connections>
                                     <segue destination="lrj-yW-JNb" kind="embed" id="csC-rL-UYn"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" restorationIdentifier="Home" translatesAutoresizingMaskIntoConstraints="NO" id="2dy-gm-eU6" userLabel="Container View Home">
-                                <rect key="frame" x="0.0" y="63" width="320" height="417"/>
+                                <rect key="frame" x="0.0" y="63" width="414" height="673"/>
                                 <connections>
                                     <segue destination="44g-vA-Rcf" kind="embed" identifier="goToHome" id="nrm-CS-H3C"/>
                                 </connections>
@@ -769,7 +771,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sidebarInviteFriends:" destination="XXV-ox-2xg" eventType="touchUpInside" id="8hF-0P-f4W"/>
-                                                    <segue destination="lHe-je-l6e" kind="show" identifier="goToInviteFriends" id="eQA-GA-VEB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t9-c4-zqc">
@@ -784,8 +785,7 @@
                                                     <color key="titleColor" red="0.22006512601333805" green="0.79139094953389022" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="sidebarHelp:" destination="XXV-ox-2xg" eventType="touchUpInside" id="XOf-ub-aI1"/>
-                                                    <segue destination="9jK-6p-hBk" kind="show" id="nYY-fV-CHg"/>
+                                                    <action selector="sidebarAbout:" destination="XXV-ox-2xg" eventType="touchUpInside" id="tYP-1y-zc6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6n-7L-40k">
@@ -801,7 +801,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sidebarSettings:" destination="XXV-ox-2xg" eventType="touchUpInside" id="JfY-tM-3tM"/>
-                                                    <segue destination="jG1-PW-Myx" kind="show" id="Z01-Tf-PFT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If3-UP-Tfd">
@@ -895,11 +894,14 @@
                         <outlet property="usernameSidebarLabel" destination="4vT-YY-Jus" id="nuv-QK-xKm"/>
                         <segue destination="x53-4c-kmq" kind="show" identifier="goToGroupBuilder" action="showDetailViewController:sender:" id="VsK-f6-D5r"/>
                         <segue destination="ph1-41-m6O" kind="show" identifier="goToLogin" id="poI-6U-pIb"/>
+                        <segue destination="Imr-lJ-lzj" kind="show" identifier="goToSettings" id="GKm-73-bg3"/>
+                        <segue destination="7Ia-cR-QKu" kind="show" identifier="goToInviteFriends" id="ss1-E3-SPc"/>
+                        <segue destination="Rli-gl-Cdx" kind="show" identifier="goToAbout" id="A8s-1x-V5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGd-Gh-Xsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103.125" y="1025.7042253521126"/>
+            <point key="canvasLocation" x="1433" y="1181"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZIc-lZ-eTc">
@@ -933,7 +935,7 @@
                                                 <attributedString key="attributedText">
                                                     <fragment content="SquareSplit Privacy Policy">
                                                         <attributes>
-                                                            <font key="NSFont" size="24" name=".SFNSText"/>
+                                                            <font key="NSFont" metaFont="system" size="24"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -947,15 +949,15 @@ Cgo
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <mutableString key="content">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
-</mutableString>
+                                                        <string key="content">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+</string>
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <mutableString key="content">
+                                                        <string key="content">
 What personal information do we collect from the people that visit our blog, website or app?
 
 When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address or other details to help you with your experience.
@@ -1074,7 +1076,7 @@ Wauconda, Illinois 60084
 United States
 squaresplit4@gmail.com
 
-Last Edited on 2017-08-12</mutableString>
+Last Edited on 2017-08-12</string>
                                                         <attributes>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1082,7 +1084,7 @@ Last Edited on 2017-08-12</mutableString>
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
-                                                <mutableString key="userLabel">squaresplit Privacy Policy This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.  What personal information do we collect from the people that visit our blog, website or app?  When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address or other details to help you with your experience.  When do we collect information?  We collect information from you when you register on our site or enter information on our site.   How do we use your information?  We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:        • To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.       • To allow us to better service you in responding to your customer service requests.       • To ask for ratings and reviews of services or products  How do we protect your information?  We do not use vulnerability scanning and/or scanning to PCI standards. We only provide articles and information. We never ask for credit card numbers. We do not use Malware Scanning.  We do not use an SSL certificate       • We do not need an SSL because: we use Firebase  Do we use 'cookies'?  We do not use cookies for tracking purposes  You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser's Help Menu to learn the correct way to modify your cookies.  If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.that make your site experience more efficient and may not function properly.   Third-party disclosure  We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.  Third-party links  We do not include or offer third-party products or services on our website.  Google  Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en   We have not enabled Google AdSense on our site but we may do so in the future.  California Online Privacy Protection Act  CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. - See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf  According to CalOPPA, we agree to the following: Users can visit our site anonymously. Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website. Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.  You will be notified of any Privacy Policy changes:       • On our Privacy Policy Page Can change your personal information:       • By calling us       • By logging in to your account  How does our site handle Do Not Track signals? We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.  Does our site allow third-party behavioral tracking? It's also important to note that we allow third-party behavioral tracking  COPPA (Children Online Privacy Protection Act)  When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.  We do not specifically market to children under the age of 13 years old. Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?  Fair Information Practices  The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.  In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur: We will notify you via email       • Within 7 business days  We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.  CAN SPAM Act  The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.  We collect your email address in order to:       • Send information, respond to inquiries, and/or other requests or questions       • Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.  To be in accordance with CANSPAM, we agree to the following:       • Not use false or misleading subjects or email addresses.       • Identify the message as an advertisement in some reasonable way.       • Include the physical address of our business or site headquarters.       • Monitor third-party email marketing services for compliance, if one is used.       • Honor opt-out/unsubscribe requests quickly.       • Allow users to unsubscribe by using the link at the bottom of each email.  If at any time you would like to unsubscribe from receiving future emails, you can email us at squaresplit4@gmail.com and we will promptly remove you from ALL correspondence.   Contacting Us  If there are any questions regarding this privacy policy, you may contact us using the information below.  SquareSplit 215 Brett Cir. Unit C Wauconda, Illinois 60084 United States squaresplit4@gmail.com  Last Edited on 2017-08-12</mutableString>
+                                                <string key="userLabel">squaresplit Privacy Policy This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.  What personal information do we collect from the people that visit our blog, website or app?  When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address or other details to help you with your experience.  When do we collect information?  We collect information from you when you register on our site or enter information on our site.   How do we use your information?  We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:        • To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.       • To allow us to better service you in responding to your customer service requests.       • To ask for ratings and reviews of services or products  How do we protect your information?  We do not use vulnerability scanning and/or scanning to PCI standards. We only provide articles and information. We never ask for credit card numbers. We do not use Malware Scanning.  We do not use an SSL certificate       • We do not need an SSL because: we use Firebase  Do we use 'cookies'?  We do not use cookies for tracking purposes  You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser's Help Menu to learn the correct way to modify your cookies.  If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.that make your site experience more efficient and may not function properly.   Third-party disclosure  We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.  Third-party links  We do not include or offer third-party products or services on our website.  Google  Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en   We have not enabled Google AdSense on our site but we may do so in the future.  California Online Privacy Protection Act  CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. - See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf  According to CalOPPA, we agree to the following: Users can visit our site anonymously. Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website. Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.  You will be notified of any Privacy Policy changes:       • On our Privacy Policy Page Can change your personal information:       • By calling us       • By logging in to your account  How does our site handle Do Not Track signals? We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.  Does our site allow third-party behavioral tracking? It's also important to note that we allow third-party behavioral tracking  COPPA (Children Online Privacy Protection Act)  When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.  We do not specifically market to children under the age of 13 years old. Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?  Fair Information Practices  The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.  In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur: We will notify you via email       • Within 7 business days  We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.  CAN SPAM Act  The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.  We collect your email address in order to:       • Send information, respond to inquiries, and/or other requests or questions       • Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.  To be in accordance with CANSPAM, we agree to the following:       • Not use false or misleading subjects or email addresses.       • Identify the message as an advertisement in some reasonable way.       • Include the physical address of our business or site headquarters.       • Monitor third-party email marketing services for compliance, if one is used.       • Honor opt-out/unsubscribe requests quickly.       • Allow users to unsubscribe by using the link at the bottom of each email.  If at any time you would like to unsubscribe from receiving future emails, you can email us at squaresplit4@gmail.com and we will promptly remove you from ALL correspondence.   Contacting Us  If there are any questions regarding this privacy policy, you may contact us using the information below.  SquareSplit 215 Brett Cir. Unit C Wauconda, Illinois 60084 United States squaresplit4@gmail.com  Last Edited on 2017-08-12</string>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1119,33 +1121,33 @@ Last Edited on 2017-08-12</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP4-19-hGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3696" y="1093"/>
+            <point key="canvasLocation" x="8955" y="225"/>
         </scene>
         <!--Listof Groups-->
         <scene sceneID="bHy-DJ-8wL">
             <objects>
                 <tableViewController id="kqz-EK-9cF" customClass="ListofGroups" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pkw-Q4-jKk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ZPK-hE-EAN" detailTextLabel="5Gk-am-nZV" style="IBUITableViewCellStyleSubtitle" id="gjW-gm-5CM">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjW-gm-5CM" id="RO3-iH-gau">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZPK-hE-EAN">
-                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Gk-am-nZV">
-                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="15" y="25" width="33" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -1169,7 +1171,7 @@ Last Edited on 2017-08-12</mutableString>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBV-eT-4SE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="1027"/>
+            <point key="canvasLocation" x="4425" y="1026.875"/>
         </scene>
         <!--New Group-->
         <scene sceneID="jf3-kM-DSN">
@@ -1184,18 +1186,18 @@ Last Edited on 2017-08-12</mutableString>
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWn-S7-yZw" id="cBU-bX-8Ny">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l2M-2d-1av">
-                                            <rect key="frame" x="15" y="13" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="12" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NBF-40-Ezu">
-                                            <rect key="frame" x="15" y="33.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="15" y="33" width="33" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -1234,7 +1236,7 @@ Last Edited on 2017-08-12</mutableString>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="1832"/>
+            <point key="canvasLocation" x="4155.9375" y="1831.875"/>
         </scene>
         <!--Create New Group-->
         <scene sceneID="yCU-a9-KHd">
@@ -1284,18 +1286,18 @@ Last Edited on 2017-08-12</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puk-Bk-Uvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="1860"/>
+            <point key="canvasLocation" x="3342.1875" y="1859.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="uXM-Cx-8Nd">
             <objects>
-                <viewController id="jG1-PW-Myx" sceneMemberID="viewController">
+                <viewController id="jG1-PW-Myx" customClass="SettingsViewController" customModule="SquareSplit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4f-EC-6vX"/>
                         <viewControllerLayoutGuide type="bottom" id="1oK-W8-Qhj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uqc-5l-hrJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hw-5z-F9d">
@@ -1310,16 +1312,17 @@ Last Edited on 2017-08-12</mutableString>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                                 <connections>
-                                    <segue destination="XXV-ox-2xg" kind="show" id="znD-kB-Wbp"/>
+                                    <action selector="cancel:" destination="jG1-PW-Myx" eventType="touchUpInside" id="KYt-b2-cET"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JWL-i7-VUb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFY-bG-0ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2349" y="651"/>
+            <point key="canvasLocation" x="-1508" y="514"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B2N-YE-CQS">
@@ -1328,7 +1331,7 @@ Last Edited on 2017-08-12</mutableString>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qUG-aq-nEr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="qUG-aq-nEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.046549208462238312" green="0.12211001664400101" blue="0.25498467683792114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1343,7 +1346,7 @@ Last Edited on 2017-08-12</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SUI-PZ-vjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="1859"/>
+            <point key="canvasLocation" x="2447.8125" y="1858.125"/>
         </scene>
         <!--New Group-->
         <scene sceneID="MZZ-2A-sCV">
@@ -1361,7 +1364,7 @@ Last Edited on 2017-08-12</mutableString>
                                 <rect key="frame" x="0.0" y="129" width="375" height="464"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHg-Kh-aOd" id="tUH-OD-Ji5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="463.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="463"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1396,7 +1399,7 @@ Last Edited on 2017-08-12</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T47-xF-7Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="2713"/>
+            <point key="canvasLocation" x="3358.125" y="2712.5"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="6oV-6r-Nau">
@@ -1407,11 +1410,11 @@ Last Edited on 2017-08-12</mutableString>
                         <viewControllerLayoutGuide type="bottom" id="NjL-VW-1C4"/>
                     </layoutGuides>
                     <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="lgu-bJ-7SG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Displayed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emh-Lz-6o4">
-                                <rect key="frame" x="4" y="97" width="312" height="48"/>
+                                <rect key="frame" x="51" y="97" width="312" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="312" id="2dh-9m-poJ"/>
                                     <constraint firstAttribute="height" constant="48" id="Yx9-tS-VYm"/>
@@ -1421,7 +1424,7 @@ Last Edited on 2017-08-12</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkw-Bg-kvO">
-                                <rect key="frame" x="4" y="69" width="312" height="48"/>
+                                <rect key="frame" x="51" y="69" width="312" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="312" id="hFi-mu-Zvm"/>
                                     <constraint firstAttribute="height" constant="48" id="mW8-1W-pDT"/>
@@ -1431,7 +1434,7 @@ Last Edited on 2017-08-12</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-tq-eUA">
-                                <rect key="frame" x="60" y="108.5" width="200" height="200"/>
+                                <rect key="frame" x="107" y="236.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="J9M-Qg-nkE"/>
                                     <constraint firstAttribute="width" constant="200" id="bON-sr-tET"/>
@@ -1442,7 +1445,7 @@ Last Edited on 2017-08-12</mutableString>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOw-KH-8Zk">
-                                <rect key="frame" x="78" y="318.5" width="164" height="30"/>
+                                <rect key="frame" x="125" y="446.5" width="164" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="93w-5c-STM"/>
                                     <constraint firstAttribute="height" constant="30" id="s8x-X8-DIq"/>
@@ -1473,7 +1476,7 @@ Last Edited on 2017-08-12</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyY-69-Fbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-736.79999999999995" y="1859.3703148425789"/>
+            <point key="canvasLocation" x="694" y="2097"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CoQ-oM-xMe">
@@ -1481,7 +1484,7 @@ Last Edited on 2017-08-12</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lrj-yW-JNb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7Tf-Bg-Mbp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="7Tf-Bg-Mbp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.046549208462238312" green="0.12211001664400101" blue="0.25498467683792114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1495,7 +1498,7 @@ Last Edited on 2017-08-12</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRi-zI-I3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="1027"/>
+            <point key="canvasLocation" x="3431.25" y="1026.875"/>
         </scene>
         <!--Group-->
         <scene sceneID="Uy7-gH-TVH">
@@ -1578,14 +1581,14 @@ Last Edited on 2017-08-12</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRu-0b-2e6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3668" y="1859.8200899550227"/>
+            <point key="canvasLocation" x="6014.0625" y="1859.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kra-vl-sKK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LaG-Hl-jic" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JBC-8D-6KP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JBC-8D-6KP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1596,7 +1599,61 @@ Last Edited on 2017-08-12</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRY-up-qLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728.8000000000002" y="1859.8200899550227"/>
+            <point key="canvasLocation" x="5074.6875" y="1859.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nQG-Ov-tY2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rli-gl-Cdx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="v9s-6n-uuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9jK-6p-hBk" kind="relationship" relationship="rootViewController" id="sPO-an-evz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hE-qQ-yAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2679.375" y="2590"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Xw-RN-2lo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ia-cR-QKu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="emM-xG-gdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lHe-je-l6e" kind="relationship" relationship="rootViewController" id="I1Y-TF-H1k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urW-8X-o0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2679" y="1551"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1bm-Cz-Kbs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Imr-lJ-lzj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nwm-5p-7pd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jG1-PW-Myx" kind="relationship" relationship="rootViewController" id="5tH-DZ-EcA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTf-lH-iYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2679" y="514"/>
         </scene>
     </scenes>
     <resources>
@@ -1610,8 +1667,8 @@ Last Edited on 2017-08-12</mutableString>
         <image name="sslogo" width="1102" height="221"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wvj-2D-Wnv"/>
-        <segue reference="H3k-6H-kKk"/>
+        <segue reference="PrW-ao-JF9"/>
+        <segue reference="poI-6U-pIb"/>
         <segue reference="RcP-DY-cha"/>
     </inferredMetricsTieBreakers>
 </document>
