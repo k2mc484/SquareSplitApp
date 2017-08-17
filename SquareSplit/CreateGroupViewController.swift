@@ -290,10 +290,9 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navController = segue.destination as! UINavigationController
-        let groupController = navController.viewControllers.first as! group
+        let navController = segue.destination as! group
         
-        groupController.passedGroupName = self.groupNameField
-        groupController.passedGroupID = groupKey
+        navController.passedGroupName = self.groupNameField
+        navController.passedGroupID = groupKey
     }
 }

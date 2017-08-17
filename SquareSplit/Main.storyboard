@@ -1231,12 +1231,12 @@ Last Edited on 2017-08-12</string>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchFriends" destination="e5K-qR-5su" id="xes-on-P6k"/>
-                        <segue destination="LaG-Hl-jic" kind="show" identifier="toGroup" id="RcP-DY-cha"/>
+                        <segue destination="pEr-eu-XPc" kind="show" identifier="toGroup" id="HHB-4r-SHp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3w-Pz-3TL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4155.9375" y="1831.875"/>
+            <point key="canvasLocation" x="4280" y="2017"/>
         </scene>
         <!--Create New Group-->
         <scene sceneID="yCU-a9-KHd">
@@ -1576,12 +1576,11 @@ Last Edited on 2017-08-12</string>
                         <outlet property="eventTotal" destination="3nu-S7-u4G" id="ii9-w1-3UP"/>
                         <outlet property="groupName" destination="xKA-lD-cIX" id="8RH-zs-m5c"/>
                         <outlet property="personalTotal" destination="wK3-8E-CRz" id="Pwa-uq-SKu"/>
-                        <segue destination="XXV-ox-2xg" kind="show" identifier="backToGroups" id="Z6q-zQ-ufe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRu-0b-2e6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6014.0625" y="1859.375"/>
+            <point key="canvasLocation" x="6014" y="2017"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kra-vl-sKK">
@@ -1599,7 +1598,7 @@ Last Edited on 2017-08-12</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRY-up-qLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5074.6875" y="1859.375"/>
+            <point key="canvasLocation" x="6014" y="626"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nQG-Ov-tY2">
@@ -1624,7 +1623,7 @@ Last Edited on 2017-08-12</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ia-cR-QKu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="emM-xG-gdZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="emM-xG-gdZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1669,6 +1668,6 @@ Last Edited on 2017-08-12</string>
     <inferredMetricsTieBreakers>
         <segue reference="PrW-ao-JF9"/>
         <segue reference="poI-6U-pIb"/>
-        <segue reference="RcP-DY-cha"/>
+        <segue reference="HHB-4r-SHp"/>
     </inferredMetricsTieBreakers>
 </document>

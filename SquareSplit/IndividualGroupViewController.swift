@@ -52,7 +52,7 @@ class group: UIViewController {
     // Do any additional setup after loading the view.
     
     @IBAction func back(_ sender: Any) {
-        performSegue(withIdentifier: "backToGroups", sender: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     
