@@ -29,7 +29,7 @@ class searchFriends: UITableViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = databaseref.child("Groups").description()
+        self.navigationItem.title = "Add Friends"
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
