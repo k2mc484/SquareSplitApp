@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35174C691F3BBD340020F56F /* ListofGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */; };
+		35382AFB1F47498500BCC17A /* NewItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35382AFA1F47498500BCC17A /* NewItemsViewController.swift */; };
 		827A721733530D155BDE28AB /* Pods_SquareSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B22C38F30FC618E7C4AC8E /* Pods_SquareSplit.framework */; };
 		8B00E0441F191EA8002DBD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00E0431F191EA8002DBD9D /* AppDelegate.swift */; };
 		8B00E04B1F191EA9002DBD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B00E04A1F191EA9002DBD9D /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		31B22C38F30FC618E7C4AC8E /* Pods_SquareSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListofGroupsTableViewController.swift; sourceTree = "<group>"; };
+		35382AFA1F47498500BCC17A /* NewItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemsViewController.swift; sourceTree = "<group>"; };
 		35DAF064FDB07F4FB6EEB19D /* Pods-SquareSplitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplitUITests/Pods-SquareSplitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60648E815FB515462EE0A2DC /* Pods-SquareSplitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplitUITests/Pods-SquareSplitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7AF1E177AFE7BAC24273BF1C /* Pods-SquareSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSplit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSplit/Pods-SquareSplit.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				8B00E04F1F191EA9002DBD9D /* Info.plist */,
 				8B00E04A1F191EA9002DBD9D /* Assets.xcassets */,
 				8B00E04C1F191EA9002DBD9D /* LaunchScreen.storyboard */,
+				35382AFA1F47498500BCC17A /* NewItemsViewController.swift */,
 			);
 			path = SquareSplit;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				8B00E0441F191EA8002DBD9D /* AppDelegate.swift in Sources */,
 				8BAD5CB51F44ECA10055EDD0 /* SettingsViewController.swift in Sources */,
 				8B2985E11F2FAB0B000B2D96 /* ContainerViewController.swift in Sources */,
+				35382AFB1F47498500BCC17A /* NewItemsViewController.swift in Sources */,
 				8BF8F32A1F3D174100DDA7AD /* NameGroupViewController.swift in Sources */,
 				8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */,
 				8BAD5CB71F44ECAC0055EDD0 /* AboutViewController.swift in Sources */,

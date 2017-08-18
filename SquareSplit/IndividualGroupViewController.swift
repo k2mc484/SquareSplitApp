@@ -56,6 +56,20 @@ class group: UIViewController {
     }
     
     
+    @IBAction func toNewItem(_ sender: Any) {
+        performSegue(withIdentifier: "toNewItem", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNewItem"
+        {
+            let itemController = segue.destination as! NewItemsViewController
+            
+            itemController.currentGroupName = passedGroupName
+            itemController.currentGroupID = passedGroupID
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
