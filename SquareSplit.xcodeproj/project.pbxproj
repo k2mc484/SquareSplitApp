@@ -20,11 +20,11 @@
 		8B508FCF1F1A81E100DA3157 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B508FCE1F1A81E100DA3157 /* AdSupport.framework */; };
 		8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */; };
 		8B508FE41F1D6DBF00DA3157 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FE31F1D6DBF00DA3157 /* PasswordResetViewController.swift */; };
-		8B508FEA1F1D6F9E00DA3157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FE91F1D6F9E00DA3157 /* ViewController.swift */; };
 		8B508FEF1F1D704D00DA3157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B508FEE1F1D704C00DA3157 /* Main.storyboard */; };
 		8B508FFB1F1FBCAC00DA3157 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B508FFA1F1FBCAC00DA3157 /* HomeScreenViewController.swift */; };
 		8B5244B41F2925EB00CF8DFE /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5244B31F2925EB00CF8DFE /* CreateGroupViewController.swift */; };
 		8B5244B61F2933D100CF8DFE /* IndividualGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5244B51F2933D100CF8DFE /* IndividualGroupViewController.swift */; };
+		8B6F28001F4C9AA50092AA37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F27FF1F4C9AA50092AA37 /* LoginViewController.swift */; };
 		8BAD5CB51F44ECA10055EDD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD5CB41F44ECA10055EDD0 /* SettingsViewController.swift */; };
 		8BAD5CB71F44ECAC0055EDD0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD5CB61F44ECAC0055EDD0 /* AboutViewController.swift */; };
 		8BAD5CB91F44ECB60055EDD0 /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD5CB81F44ECB60055EDD0 /* InviteFriendsViewController.swift */; };
@@ -73,11 +73,11 @@
 		8B508FCE1F1A81E100DA3157 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
 		8B508FE31F1D6DBF00DA3157 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
-		8B508FE91F1D6F9E00DA3157 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B508FEE1F1D704C00DA3157 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B508FFA1F1FBCAC00DA3157 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		8B5244B31F2925EB00CF8DFE /* CreateGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		8B5244B51F2933D100CF8DFE /* IndividualGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualGroupViewController.swift; sourceTree = "<group>"; };
+		8B6F27FF1F4C9AA50092AA37 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BAD5CB41F44ECA10055EDD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8BAD5CB61F44ECAC0055EDD0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8BAD5CB81F44ECB60055EDD0 /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				8B5244B51F2933D100CF8DFE /* IndividualGroupViewController.swift */,
 				35174C681F3BBD340020F56F /* ListofGroupsTableViewController.swift */,
 				8B00E0431F191EA8002DBD9D /* AppDelegate.swift */,
-				8B508FE91F1D6F9E00DA3157 /* ViewController.swift */,
+				8B6F27FF1F4C9AA50092AA37 /* LoginViewController.swift */,
 				8B2985E01F2FAB0B000B2D96 /* ContainerViewController.swift */,
 				8B508FE31F1D6DBF00DA3157 /* PasswordResetViewController.swift */,
 				8B508FE11F1D6D7200DA3157 /* RegistrationPageViewController.swift */,
@@ -493,12 +493,12 @@
 				8B5244B41F2925EB00CF8DFE /* CreateGroupViewController.swift in Sources */,
 				8B00E0441F191EA8002DBD9D /* AppDelegate.swift in Sources */,
 				8BAD5CB51F44ECA10055EDD0 /* SettingsViewController.swift in Sources */,
+				8B6F28001F4C9AA50092AA37 /* LoginViewController.swift in Sources */,
 				8B2985E11F2FAB0B000B2D96 /* ContainerViewController.swift in Sources */,
 				35382AFB1F47498500BCC17A /* NewItemsViewController.swift in Sources */,
 				8BF8F32A1F3D174100DDA7AD /* NameGroupViewController.swift in Sources */,
 				8B508FE21F1D6D7200DA3157 /* RegistrationPageViewController.swift in Sources */,
 				8BAD5CB71F44ECAC0055EDD0 /* AboutViewController.swift in Sources */,
-				8B508FEA1F1D6F9E00DA3157 /* ViewController.swift in Sources */,
 				8BAD5CB91F44ECB60055EDD0 /* InviteFriendsViewController.swift in Sources */,
 				8B5244B61F2933D100CF8DFE /* IndividualGroupViewController.swift in Sources */,
 				8B508FE41F1D6DBF00DA3157 /* PasswordResetViewController.swift in Sources */,
