@@ -28,6 +28,13 @@ class ListofGroups: UITableViewController, UISearchResultsUpdating {
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         
+        let pageTitle = UILabel()
+        pageTitle.text = "Hello"
+        pageTitle.adjustsFontSizeToFitWidth = Bool(true)
+        pageTitle.frame = CGRect(x: 0, y: 0, width: 300, height: 100)
+        
+        self.view.addSubview(pageTitle)
+        
         let CurrentUser = Auth.auth().currentUser
         databaseref.child((CurrentUser?.uid)!).child("Groups").queryOrdered(byChild: "Name").observe(.childAdded, with: {(snapshot) in
             

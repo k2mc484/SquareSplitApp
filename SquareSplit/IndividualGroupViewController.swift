@@ -30,12 +30,22 @@ class group: UIViewController {
             let value = snapshot.value as? NSDictionary
             let debit = value?["Debit"] as? String
             let credit = value?["Credit"] as? String
-            let name = value?["Name"] as? String
+            //FINISH THIS --> let name = value?["Name"] as? String
             
             let personalTotalDoub = Double(debit!)! - Double(credit!)!
             
             self.personalTotal.text = "$" + String(personalTotalDoub)
             
+            // Circles
+            self.personalTotal.layer.cornerRadius = 50
+            self.personalTotal.layer.borderWidth = 2
+            self.personalTotal.layer.borderColor = UIColor.blue.cgColor
+            self.personalTotal.layer.bounds = CGRect(x: 208, y: 100, width: 100, height: 100)
+            
+            self.eventTotal.layer.cornerRadius = 50
+            self.eventTotal.layer.borderWidth = 2
+            self.eventTotal.layer.borderColor = UIColor.red.cgColor
+            self.eventTotal.layer.bounds = CGRect(x: 0, y: 100, width: 100, height: 100)
             
         })
         ref.child("Groups").child(passedGroupID).observeSingleEvent(of: .value, with: { (snapshot) in
