@@ -30,7 +30,7 @@ class group: UIViewController {
             let value = snapshot.value as? NSDictionary
             let debit = value?["Debit"] as? String
             let credit = value?["Credit"] as? String
-            let name = value?["Name"] as? String
+            _ = value?["Name"] as? String
             
             let personalTotalDoub = Double(debit!)! - Double(credit!)!
             
